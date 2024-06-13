@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
 
   get 'home/index'
-  get 'home/read'
+  get 'read/:article_id', to: 'home#read', as: "read"
   resources :articles
   resources :users
   root to: 'home#index'
