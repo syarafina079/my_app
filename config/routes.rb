@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
 
   get 'home/index'
+  get 'home/read'
   resources :articles
   resources :users
   root to: 'home#index'
